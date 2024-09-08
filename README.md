@@ -3,9 +3,13 @@
 </h2>
 <p>
     1.Extract the folder 
+    <br>
     2.Go to extenstions in chrome or "chrome://extenstions"
+    <br>
     3.Enable developer option on the Top right corner
+    <br>
     4.Select Load Unpacked near the Top Left corner
+    <br>
     5.select the extracted folder in which manifest.json is present
 
 </p>
