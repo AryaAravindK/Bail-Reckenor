@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bail Decision Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bail Eligibility Result</h1>
+    <div id="result">
+        <p id="bail-decision"></p>
+        <p id="bail-probability"></p>
+        <p id="bail-reason"></p>
+    </div>
+
+    <script>
+        // Get result from localStorage and display it
+        const result = JSON.parse(localStorage.getItem('bailResult'));
+
+        if (result) {
+            document.getElementById('bail-decision').textContent = `Decision: ${result.bailDecision}`;
+            document.getElementById('bail-probability').textContent = `Probability of Bail: ${result.probability}`;
+            document.getElementById('bail-reason').textContent = `Reason: ${result.reason}`;
+        } else {
+            document.getElementById('result').innerHTML = "<p>No result found.</p>";
+        }
+    </script>
+</body>
+</html>
+    
