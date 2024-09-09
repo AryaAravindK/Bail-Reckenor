@@ -180,3 +180,49 @@ function calculateBailProbability(crime, pastRecord, directInvolvement, evidence
     };
 }
 
+
+
+
+
+
+// Animations part
+// we should add this in manifest.json to prevent chrome from ristricting external cdn fro gsap
+// "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'"
+
+window.addEventListener("load", function() {
+const tl = gsap.timeline();
+
+
+tl.from(".logo",{
+    delay:1,
+    opacity:0,
+    duration:1.0,
+    
+
+})
+tl.from(".loader h3",{
+    
+    opacity:0,
+    duration:0.5,
+    scale:0.7,
+    y:10
+    
+
+})
+
+
+tl.to(".loader",{
+    delay:1,
+    opacity:0,
+    display:"none",
+    duration:2,
+
+})
+});
+
+
+
+
+
+
+
