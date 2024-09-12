@@ -3,7 +3,7 @@ body {
     width: 300px;
     font-family: Arial, sans-serif;
     padding: 20px;
-    background: url('verticle_bg.jpeg');
+    background: url('bg2.jpg');
     background-size: cover;
     
 }
@@ -57,9 +57,19 @@ input,select{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #ffffff90;
+    background-color: #78b7d089;
     font-size: 15px;
+    
 }
+
+
+
+label,h1{
+    color:#fff;
+    background-blend-mode: lighten;
+}
+
+
 
 
 #age-gen{
